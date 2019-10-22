@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
@@ -16,6 +17,8 @@ public class EmployeeOfWeek {
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private Employee employee;
+    @Column(name = "week_of_date")
+    private LocalDate weekStarting;
     @Column
-    private String
+    private String description;
 }
