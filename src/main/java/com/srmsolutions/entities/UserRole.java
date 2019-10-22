@@ -19,5 +19,5 @@ public class UserRole {
     @Column
     private String name;
     @Column
-    private String function;
+    private String description;
 }

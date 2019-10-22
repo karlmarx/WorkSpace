@@ -11,7 +11,8 @@ description varchar(140) not null
 create table job_role (
 job_role_id int primary key auto_increment,
 name varchar(30) not null,
-description varchar(140) not null
+description varchar(140) not null,
+department_name varchar(30)
 );
 
 create table category (

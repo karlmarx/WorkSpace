@@ -19,7 +19,7 @@ public class JobRole {
     @Column
     private String name;
     @Column
-    private String responsibilities;
+    private String description;
     @Column(name = "department_name")
     private String departmentName;
 }
